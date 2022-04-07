@@ -1,0 +1,131 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  padding: 100px;
+  box-sizing: border-box;
+  background-color: #292B73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panels {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+}
+
+.panel {
+  flex: 5;
+  padding: 30px;
+  background-color: #fff;
+  color: #292B73;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+.panel.yellow {
+  flex: 4;
+  background-color: #FFB637;
+}
+.panel h1, .panel h3 {
+  margin: 0;
+  text-align: center;
+}
+.panel h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.panel h3 {
+  font-weight: 400;
+}
+.panel textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  outline: none;
+  letter-spacing: 1px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+.panel textarea:focus {
+  border-color: #292B73;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin: 6px;
+  font-style: 16px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  border: none;
+}
+button.purple {
+  background-color: #292B73;
+  color: white;
+}
+button.yellow {
+  background-color: #FFB637;
+}
+button.white {
+  border: solid 2px #292B73;
+}
+
+.symbol {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 900;
+}
+
+hr {
+  border: none;
+  border-bottom: 3px solid #292B73;
+}
+
+.translist {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  flex-wrap: wrap;
+}
+.translist li {
+  margin-bottom: 5px;
+  font-size: 18px;
+  width: 30%;
+}
+
+.decoration {
+  font-size: 500px;
+  color: white;
+  position: absolute;
+  font-weight: 900;
+  left: -50px;
+  top: -50px;
+  opacity: 0.1;
+}
+
+.playlist {
+  font-size: 20px;
+  text-align: center;
+  height: 20px;
+}
+.playlist .playing {
+  color: #FFB637;
+}
